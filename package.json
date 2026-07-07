@@ -1,0 +1,24 @@
+{
+  "name": "ai-summarizer-extension",
+  "version": "1.0.0",
+  "description": "A Manifest V3 Chrome extension that scrapes any webpage — job listings, news articles, product pages, blogs, LinkedIn posts — and summarizes the content using an LLM API (Claude), via a Node/Express backend.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr4gya-ai/Google-Blue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pr4gya-ai/Google-Blue/issues"
+  },
+  "homepage": "https://github.com/pr4gya-ai/Google-Blue#readme"
+}

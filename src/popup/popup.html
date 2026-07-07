@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Summarizer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Webpage Summarizer</h1>
+    <button id="darkModeToggle" title="Toggle dark mode">🌙</button>
+  </header>
+
+  <div class="tabs">
+    <button id="tabSummarize" class="tab-btn active">Summarize</button>
+    <button id="tabHistory" class="tab-btn">History</button>
+  </div>
+
+  <!-- SUMMARIZE VIEW -->
+  <section id="summarizeView">
+    <div class="row">
+      <button id="refreshBtn">🔄 Refresh Page Content</button>
+    </div>
+
+    <p id="sourceUrl" class="meta"></p>
+    <p id="scrapedAt" class="meta"></p>
+
+    <div class="style-selector">
+      <label><input type="radio" name="style" value="detailed" checked /> Detailed</label>
+      <label><input type="radio" name="style" value="bullet" /> Bullet points</label>
+    </div>
+
+    <button id="summarizeBtn">✨ Summarize</button>
+
+    <div id="statusMsg" class="status"></div>
+
+    <div id="summaryOutput" class="summary-box" hidden></div>
+
+    <div class="actions" id="summaryActions" hidden>
+      <button id="copyBtn">📋 Copy</button>
+      <button id="downloadBtn">⬇️ Download</button>
+    </div>
+  </section>
+
+  <!-- HISTORY VIEW -->
+  <section id="historyView" hidden>
+    <div id="historyList"></div>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
