@@ -3,7 +3,7 @@
 // the worker going idle — anything that must persist goes into
 // chrome.storage.local instead.
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "https://google-blue.onrender.com";
 
 chrome.runtime.onInstalled.addListener((details) => {
   console.log("[service-worker] Extension installed. Reason:", details.reason);
